@@ -1,0 +1,474 @@
+/**index.wxss**/
+.home-sgn{
+  background: #FFB727;
+  height: 46rpx;
+  color: #fff;
+  line-height: 46rpx;
+  text-align: center;
+  width: 134rpx;
+  font-size: 22rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+  border-radius: 0 23rpx 23rpx 0;
+  z-index: 11;
+}
+.home-le{
+  color: #fff;
+  position: absolute;
+  top: 22rpx;
+  right: 0;
+  font-size: 24rpx;
+  z-index: 11;
+}
+.home-le image{
+  width: 23rpx;
+  height: 23rpx;
+  margin-right:15rpx;
+  vertical-align: middle;
+}
+/* 领金币 */
+.home-bg{
+  background: #F9382B;
+  border-radius: 0 0 28% 28%;
+  padding:20rpx 0 80rpx 0; 
+}
+.home-my{
+  margin: 0 auto;
+  position: relative;
+  width: 600rpx;
+  text-align: center;
+  height: 400rpx;
+  background: url(https://kuaiyouqian.net/static/mini/circle.png) no-repeat;
+  background-size:60%;
+  background-position:center 70rpx; 
+}
+.home-coin{
+  position: absolute;
+  width: 86rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 20rpx;
+}
+.home-coin image{
+  width: 83rpx;
+  height: 83rpx;
+}
+.home-coin1{
+  left: 30rpx;
+  top: 70rpx;
+}
+.home-coin2{
+  right: 30rpx;
+  top: 70rpx;
+}
+.home-coin3{
+  left: 0rpx;
+  bottom: 30rpx;
+}
+.home-coin4{
+  right: 0rpx;
+  bottom: 30rpx;
+}
+.home-my-title{
+  padding-top: 160rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+.home-my-coin{
+  font-size: 72rpx;
+  line-height: 100rpx;
+  color: #fff;
+}
+.home-my-step{
+  border: 1px solid #ECECEC;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding: 0 6rpx;
+  font-size: 24rpx;
+  width: 250rpx;
+  color: #fff;
+  border-radius: 26rpx;
+  margin: 40rpx auto;
+}
+.home-my-step text{
+  color: #fded72;
+}
+.home-lei-title{
+   padding-left: 24rpx;
+   color:#646464;
+   font-size: 28rpx;
+   margin-top: 38rpx;
+}
+/*动画部分*/
+.coin-ani{
+ animation: tiao 1.5s linear infinite;
+}
+@keyframes tiao{
+  0%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(-15rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+.coin-fly1{
+   animation: move1 1.5s ease-in-out ;
+}
+.coin-fly2{
+   animation: move2 1.5s ease-in-out ;
+}
+.coin-fly3{
+   animation: move3 1.5s ease-in-out ;
+}
+.coin-fly4{
+   animation: move4 1.5s ease-in-out ;
+}
+@keyframes tiao{
+  0%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(-15rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+@keyframes move1{
+  from{
+    transform: translate3d(0,0,0) scale(1);
+    opacity:1;
+  }
+  to{
+    transform: translate3d(250rpx,100rpx,-50rpx) scale(0.3);
+    opacity: 0;
+  }
+}
+@keyframes move2{
+  from{
+    transform: translate3d(0,0,0) scale(1);
+    opacity:1;
+  }
+  to{
+    transform: translate3d(-250rpx,100rpx,-50rpx) scale(0.3);
+    opacity: 0;
+  }
+}
+@keyframes move3{
+  from{
+    transform: translate3d(0,0,0) scale(1);
+    opacity:1;
+  }
+  to{
+    transform: translate3d(250rpx,-100rpx,-50rpx) scale(0.3);
+    opacity: 0;
+  }
+}
+@keyframes move4{
+  from{
+    transform: translate3d(0,0,0) scale(1);
+    opacity:1;
+  }
+  to{
+    transform: translate3d(-250rpx,-100rpx,-50rpx) scale(0.3);
+    opacity: 0;
+  }
+}
+.home-wenrun-auth{
+  color: #3A3A3A;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 54rpx;
+  margin-top: 30rpx;
+}
+.home-wenrun-auth button{
+  width:146rpx;
+height:54rpx;
+background:rgba(250,192,66,1);
+border-radius:4rpx;
+color: #fff;
+font-size: 28rpx;
+text-align: center;
+line-height: 54rpx;
+padding: 0;
+margin: 0;
+margin-right: 56rpx;
+float: right;
+}
+/*红包部分*/
+.home-ul{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.home-li-title{
+display: inline-block;
+width: 143rpx;
+text-align: center;
+font-size: 24rpx;
+line-height: 50rpx;
+color: #1C1C1C;
+}
+.home-li-content{
+  display: inline-block;
+  width: 143rpx;
+  height: 213rpx;
+  text-align: center;
+  position: relative;
+}
+.home-li-content .home-li-fake{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: (255,255,255,0);
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.home-li-openwait{
+  background: url(https://kuaiyouqian.net/static/mini/openwait.png) no-repeat;
+  background-size: 80%;
+  background-position: center top;
+  border-top: 1px solid #D2D1D1;
+  color: #FDDD0C;
+  font-size: 30rpx;
+}
+.home-li-openwait text{
+   width: 100%;
+   text-align: center;
+   top: 84rpx;
+   position: absolute;
+   left: 0;
+}
+.home-li-opened text{
+   width: 100%;
+   text-align: center;
+   top: 80rpx;
+   position: absolute;
+   left: 0;
+}
+.home-li-openable text{
+   width: 100%;
+   text-align: center;
+   top: 84rpx;
+   position: absolute;
+   left: 0;
+}
+.home-li-opened{
+  background: url(https://kuaiyouqian.net/static/mini/opened.png) no-repeat;
+  background-position: center top;
+  border-top: 1px solid #F34B28;
+  background-size: 80%;
+  color: #BC0032;
+  font-size: 30rpx;
+}
+.home-li-openable{
+  background: url(https://kuaiyouqian.net/static/mini/openable.png) no-repeat;
+  background-size: 95%;
+  background-position: center top;
+  border-top: 1px solid #F34B28;
+  color: #FDDD0C;
+  font-size: 36rpx;
+}
+
+/*弹框部分*/
+.red-ball{
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 575rpx;
+  height: 697rpx;
+  background: url(https://kuaiyouqian.net/static/mini/red-bg.png) no-repeat;
+  background-size:cover;
+  z-index: 1112; 
+}
+.red-ball-title{
+  text-align: center;
+  color: #E5E9A3;
+  font-size: 60rpx;
+  margin-top: 135rpx;
+}
+.red-ball-content{
+  color: #E5E9A3;
+  font-size: 30rpx;
+  margin-top: 383rpx;
+  text-align: center;
+}
+.red-ball-close{
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: -70rpx;
+  text-align:center;
+ width: 100%;
+}
+.red-gift{
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550rpx;
+  height:760rpx;
+  background: url(https://kuaiyouqian.net/static/mini/red-gifted.png) no-repeat;
+  background-size:cover;
+  z-index: 1112; 
+  text-align: center;
+}
+.red-gift-title{
+  color: #4C4740;
+  font-size: 24rpx;
+  margin: 190rpx 0 40rpx 0;
+}
+.red-gift-nums{
+  font-size: 72rpx;
+  color: #C84C40;
+}
+.red-gift-nums text{
+  font-size: 36rpx;
+}
+.red-gift-given{
+  font-size: 24rpx;
+  color: #4C4740;
+  line-height: 100rpx;
+}
+.share-tips{
+  color: #FAD479;
+  font-size: 20rpx;
+  margin: 45rpx 0;
+}
+.userInfo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 10;
+}
+.share-container{
+  position: fixed;
+  top: 250rpx;
+  left: 50%;
+  z-index: 1112;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width:550rpx;
+  height:630rpx;
+  background:rgba(255,255,255,1);
+  border-radius:30rpx;
+}
+.share-head{
+  width: 442rpx;
+  height: 272rpx;
+  margin-top: -156rpx;
+}
+.share-li{
+  margin-bottom:60rpx;
+  margin-top: 43rpx;
+  width:462rpx;
+  height:86rpx;
+  background:rgba(255,253,230,1);
+  border-radius:4rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share-li view:nth-of-type(1){
+  width:170rpx;
+  padding: 0;
+font-size:24rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(237,94,50,1);
+}
+.share-li view image{
+  width: 56rpx;
+  height: 56rpx;
+  vertical-align: middle;
+  margin-left: 40rpx;
+}
+.share-li view:nth-of-type(2){
+  color: #FF3600;
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.share-banner{
+  height: 154rpx;
+  width: 466rpx;
+}
+.bsbz{
+  width:536rpx;
+height:797rpx;
+background:url(https://kuaiyouqian.net/static/mini/bsbu.png) no-repeat;
+background-size: contain;
+border-radius:20rpx;
+position: fixed;
+top: 121rpx;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+z-index: 1112;
+}
+.bsbz .bsbz-title{
+  color: #C84C40;
+  font-size: 42rpx;
+  margin-top: 252rpx;
+}
+.bsbz .bsbz-tips{
+  color: #4C4740;
+  font-size: 30rpx;
+  margin-top: 57rpx;
+}
+.opening{
+  width:550rpx;
+/* height:526rpx; */
+background:rgba(255,255,255,1);
+border-radius:30rpx;
+position: fixed;
+top: 220rpx;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+z-index: 1112;
+}
+.opening-tou{
+  height: 272rpx;
+  width: 442rpx;
+  margin-top: -150rpx;
+}
+.opening-jinbi{
+  width: 260rpx;
+  height: 140rpx;
+  margin-top: -24rpx;
+}
+.opening-houde{
+  color: #ED5E32;
+  font-size: 30rpx;
+  margin-bottom: 66rpx;
+}
+.opening-houde text{
+font-size: 60rpx;
+font-weight: bold;
+}
+.opening-yuji{
+  color: #F9382B;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 122rpx;
+}

@@ -1,0 +1,49 @@
+<wxs module="fn">
+module.exports={
+    filterDate:function(time){
+      return time.split(' ')[0];
+    },
+    filterTime:function(time){
+      return time.split(' ')[1].split('.')[0]
+    }
+}
+
+</wxs>
+<view class='inter'>
+  <view class='inter-top'>
+    <view class='inter-amount' style='border-right:1px solid #fff;'>
+      <text>{{income}}</text>
+      <text>乐赚币余额</text>
+    </view>
+    <view class='inter-amount'>
+      <text>{{todayIncome}}</text>
+      <text>今日收益</text>
+    </view>
+    <button open-type='share' class='share'><image src='../../static/share-y.png'></image>推荐给好友赚乐赚币</button>
+  </view>
+   <view class='home-ad xm_banner'>
+    <!-- <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+  <!-- <ad unit-id="adunit-15e19a844b4bf183"></ad> -->
+  <ad unit-id="adunit-4b2c5fd6911c8d30" ad-type="video" ad-theme="white"></ad>
+  </view>
+  <view class='inter-lezhuan'>乐赚币</view>
+  <view class='inter-ul' wx:if="{{list.length>0}}">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+      <block wx:if="{{index==0}}">
+          <view  class='inter-date'>{{fn.filterDate(item.time)}}</view>
+      </block>
+      <block wx:else>
+           <view wx:if="{{fn.filterDate(item.time)!==fn.filterDate(list[index-1].time)}}" class='inter-date'>{{fn.filterDate(item.time)}}</view>
+      </block>
+      <view class='inter-li'>
+        <text>{{item.name}}</text>
+        <text>{{fn.filterTime(item.time)}}</text>
+        <text>{{item.status==1?'+':'-'}}{{item.money}}</text>
+      </view>
+  </block>
+  </view>
+  <view wx:else style='line-height:100rpx;text-align:center;font-size:28rpx;color:#ddd;'>暂无收益</view>
+</view>

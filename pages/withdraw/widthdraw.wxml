@@ -1,0 +1,53 @@
+<view class='wd'>
+    <view class='wd-top'>
+        <view class='wd-kp'>
+           <button open-type='contact' class='wd-kefu'>联系客服</button>
+           <view class='wd-problem' bindtap='goProblem'>常见问题</view>
+        </view>
+        <view class='wd-amount'>{{money}}<text>元</text></view>
+        <view class='wd-shouyi'>我的收益</view>
+    </view>
+    <view class='wd-opt'>
+        <view class='wd-opt-tips'>提现金额</view>
+        <view class='wd-rmb' bindtap='handleChange'>
+             <text>¥{{txMoney}}</text>
+             <view><image src='../../static/down.png'></image></view>
+        </view>
+         <button class='wd-share' open-type='share'>邀请好友，一起领红包</button>
+         <button wx:if="{{hasUserInfo}}" bindtap='withDraw' class='wd-tx'>提现</button>
+         <button lang='zh_CN' wx:else bindgetuserinfo="bindGetUserInfo" open-type='getUserInfo' class='wd-tx'>提现</button>
+    </view>
+    <view class='home-ad xm_banner'>
+    <!-- <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+  <ad unit-id="adunit-f82811905952b11d"></ad>
+  </view>
+    <view class='wd-rule'>
+        <view class='wd-rule-title'>
+        提现说明：
+        </view>
+        <view>
+        1.首次余额满50元可提现</view>
+       <view> 2.若提示超过当日步数乐赚总额度上限，请明日再来提现，总额度
+          每日0点更新</view>
+       <view> 3.如有疑问和反馈建议，请联系步数乐赚工作人员QQ:329454340</view>
+       <view> 4.微信官方为保证资金安全要求，提现需要实名认证</view>
+       <view> 5.商务合作请联系QQ: 329454340</view>
+       <view> 6.用户连续7天未登录步数乐赚,乐赚币和余额将被清零</view>
+       <view> 7.根据国家税务总局规定，对个人获得企业派发的网络红包应按照
+          所得金额缴纳个人所得税，税款由派发红包的企业代扣代缴。
+          代缴方案:按提现金额的20%收取个人所得税</view>
+       <view> 8.每个手机号只能绑定一个步数乐赚账号，步数乐赚暂不支持国外
+          手机号，敬请谅解</view>
+
+    </view>
+    <view class='mask' wx:if="{{txtips&&times==0}}"></view>
+    <view class='wd-shui' wx:if="{{txtips&&times==0}}">
+     <image src='https://kuaiyouqian.net/static/mini/tx-top.png'></image>
+     <view>零钱提现提醒</view>
+     <view>根据国家税务总局规定,对个人获得企业派发的网络红包按提现金额的20%收取个人所得税</view>
+     <button bindtap='tx'>知道了</button>
+    </view>
+</view>

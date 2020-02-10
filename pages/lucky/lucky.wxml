@@ -1,0 +1,18 @@
+<view>
+<view>
+幸运大转盘
+</view>
+<view class='wrapper'>
+    <view class='{{active==0?"active":""}}'>0</view>
+    <view class='{{active==1?"active":""}}'>1</view>
+    <view class='{{active==2?"active":""}}'>2</view>
+    <view class='{{active==7?"active":""}}'>7</view>
+    <view bindtap='start'>抽奖</view>
+    <view class='{{active==3?"active":""}}'>3</view>
+    <view class='{{active==6?"active":""}}'>6</view>
+    <view class='{{active==5?"active":""}}'>5</view>
+    <view class='{{active==4?"active":""}}'>4</view>
+</view>
+<input bindinput='change' ></input>
+<button bindtap='confirm'>确定</button>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "xm-ad": "/components/xmAD/xmAD"
+  },
+  "navigationBarTitleText": "收支详情"
+}

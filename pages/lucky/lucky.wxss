@@ -1,0 +1,24 @@
+/* pages/lucky/lucky.wxss */
+.wrapper{
+  margin: 10px auto;
+  width: 500rpx;
+  display: flex;
+  justify-content: space-around;
+  
+  flex-wrap: wrap;
+}
+.wrapper view{
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+  border: 1px solid #333;
+  transition: .1s linear;
+}
+.wrapper view:active{
+  background: rgba(0,0,0,0.7);
+}
+.wrapper .active{
+  background: #f00;
+  color: #fff;
+}

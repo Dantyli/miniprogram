@@ -1,0 +1,81 @@
+<view>
+  <view class='mine-top'>
+    <view class='mine-avatar'>
+      <open-data type="userAvatarUrl">
+      </open-data>
+    </view>
+    <view class='mine-nick'>
+        <open-data type="userNickName"></open-data>
+    </view>
+    <view class='mine-content'>
+        <view class='mine-detail'>
+           <view bindtap='goIncome'>收支详情</view>
+           <view bindtap='goWD'>点击提现</view>
+        </view>
+        <view class='mine-amount'>
+        <view style='text-align:left;'>{{coin}}</view>
+        <view class='mine-lv' style='text-align:center;'>
+          1000币=1元
+        </view>
+        <view style='text-align:right;'>{{money/100}} <text>元</text></view>
+        </view>
+        <view class='mine-leimu'>
+            <view>乐赚币余额</view>
+            <view bindtap='exchangeToMoney'>立即兑换</view>
+            <view>我的收益</view>
+        </view>
+    </view>
+    
+  </view>
+  <view class='mine-bottom'>
+      <view class='mine-bottom-title'>
+         限时福利
+      </view>
+      <view class='mine-bottom-content'>
+         <text class='mine-text1'>邀请好友</text>
+         <image src='https://kuaiyouqian.net/static/mini/lezhuan.png'></image>
+         <text class='mine-text2'>+10~200 乐赚币</text>
+         <button open-type='share'>邀请</button>
+      </view>
+       <view class='mine-bottom-title'>
+         每日任务
+      </view>
+      <view class='mine-bottom-content'>
+         <text class='mine-text1'>每日签到</text>
+         <image src='https://kuaiyouqian.net/static/mini/lezhuan.png'></image>
+         <text class='mine-text2'>+10 乐赚币</text>
+         <button class='{{signIn=="0"?"":"signed"}}' bindtap='signin'>去签到</button>
+      </view>
+  </view>
+  <view class='mask' wx:if="{{exchange}}"></view>
+  <view class='mine-exchange' wx:if="{{exchange}}">
+      <view class='mine-exchange-title' >转换收益</view>
+      <view class='mine-exchange-coin'>
+        <image src='https://kuaiyouqian.net/static/mini/lezhuan.png'></image>
+        X {{canChange}}
+      </view>
+      <view class='mine-exchange-money'>
+       ¥{{canChange/1000}} <text>元</text>
+      </view>
+      <button style='margin-top:150rpx;background:#FECA91;' class='share-btn' bindtap='exchange'>看视频免5乐赚币</button>
+      <view class="mine-exchange-tips">
+          说明：每次转化乐赚币需消耗5乐赚币           
+      </view>
+      <view class='mine-exchange-close' bindtap='close'>点击关闭</view>
+  </view>
+  <video src="https://2162.cdn-vod.huaweicloud.com/asset/875623a7066945c10c7e589672a721ad/8f31294526d70c84aa11c82673864764.mp4"></video>
+  <!-- 插屏⼴广告，按需引⼊入 --> 
+  <view class="xm_insert">
+  <!-- <xm-ad data-id="{{xmad.ad.insert}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+</view>
+ <view class='home-ad xm_banner'>
+    <!-- <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+  <ad unit-id="adunit-f82811905952b11d"></ad>
+  </view>
+</view>

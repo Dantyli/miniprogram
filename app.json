@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/index/index",
+    
+    "pages/introduce/introduce",
+    "pages/signin/signin",
+    "pages/lucky/lucky",
+    "pages/integral/integral",
+    "pages/logs/logs",
+    "pages/problem/problem",
+    "pages/withdraw/widthdraw",
+    "pages/xmadPage/copyInfo",
+    "pages/xmadPage/sell",
+    "pages/xmadPage/collect"
+  ],
+  "tabBar": {
+    "selectedColor": "#F34B28",
+    "color": "#B0B0B0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/home.png",
+        "selectedIconPath": "./static/home_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./static/my.png",
+        "selectedIconPath": "./static/my_active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "步数乐乐赚",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

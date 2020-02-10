@@ -1,0 +1,33 @@
+<view class='intr'>
+<view class='intr-banner'>
+    <image src='https://kuaiyouqian.net/static/mini/problem.png'></image>
+</view>
+  <view class='intr-content'>
+    <view class='intr-title'>
+    1.步数增加了为什么没有获得乐赚币？
+    </view>
+    <view>
+   每天步数已经达到可兑换为乐赚币的,上限(80000步)，则不会
+再转化为乐赚币。
+
+    </view>
+    <view class='intr-title'>
+     2.乐赚币转化为现金时为什么不能完全转化？
+    </view>
+    <view style='margin-bottom:20rpx;'>
+     
+                            1.乐赚币大于10个时才能转化为现金。
+                        
+                        
+    </view>
+    <view style='margin-bottom:20rpx;'>
+     2.每次乐赚币转化为现金时，只转换十位以上乐赚币，不足的部
+分需累计下次再转化。例如:你有3418个乐赚币，只能转化
+3410个(3.41元) ，剩余8乐赚币累计超过10乐赚币时再次
+转化。
+    </view>
+  </view>
+   <view class="home-ad">
+      <ad unit-id="adunit-8c35e84f11e1ad93"></ad>
+  </view>
+</view>

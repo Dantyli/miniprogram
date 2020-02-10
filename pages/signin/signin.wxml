@@ -1,0 +1,67 @@
+<view>
+    <view class='signin-content'>
+        <view class='signin-title'>签到7天获得丰厚礼包</view>
+        <view class='signin-step'>
+           <image class='signin-bar' src='https://kuaiyouqian.net/static/mini/bar.png'></image>
+            <view class='signin-step-bg'>
+                <view class='signin-has'>已经连续签到{{days}}天</view>
+            <view class='signin-ul'>
+                <view class='signin-li'>
+                    <view class='signin-coin'>5</view>
+                    <view class='signin-text'>第1天</view>
+                    <view class='signin-mask' wx:if="{{days>0}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view>
+                 <view class='signin-li'>
+                    <view class='signin-coin'>10</view>
+                    <view class='signin-text'>第2天</view>
+                     <view class='signin-mask' wx:if="{{days>1}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view> <view class='signin-li'>
+                    <view class='signin-coin'>20</view>
+                    <view class='signin-text'>第3天</view>
+                     <view class='signin-mask' wx:if="{{days>2}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view> <view class='signin-li'>
+                    <view class='signin-coin'>10</view>
+                    <view class='signin-text'>第4天</view>
+                     <view class='signin-mask' wx:if="{{days>3}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view> <view class='signin-li'>
+                    <view class='signin-coin'>10</view>
+                    <view class='signin-text'>第5天</view>
+                     <view class='signin-mask' wx:if="{{days>4}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view> <view class='signin-li'>
+                    <view class='signin-coin'>20</view>
+                    <view class='signin-text'>第6天</view>
+                     <view class='signin-mask' wx:if="{{days>5}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view> <view class='signin-li'>
+                    <view class='signin-coin-gift'>5</view>
+                    <view class='signin-text'>第7天</view>
+                     <view class='signin-mask' wx:if="{{days>6}}">
+                       <image src='https://kuaiyouqian.net/static/mini/dui.png'></image>
+                    </view>
+                </view>
+            </view>
+             </view>
+        </view>
+    </view>
+     <button class='share-btn-ani' open-type='share'>邀请好友得 10-200 乐赚币</button>
+
+     <view class='home-ad xm_banner' style="margin-top:180rpx;">
+    <!-- <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+  <!-- <ad unit-id="adunit-15e19a844b4bf183"></ad> -->
+  <ad unit-id="adunit-4b2c5fd6911c8d30" ad-type="video" ad-theme="white"></ad>
+  </view>
+</view>

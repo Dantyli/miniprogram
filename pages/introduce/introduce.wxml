@@ -1,0 +1,53 @@
+<view class='intr'>
+<view class='intr-banner'>
+    <image src='https://kuaiyouqian.net/static/mini/intr-banner.png'></image>
+</view>
+  <view class='intr-content'>
+    <view class='intr-title'>
+     1. 什么是乐赚币
+    </view>
+    <view>
+      
+    乐赚币是由步数乐赚推出的运动奖励积分，为鼓励大家更多进行
+健康运动，每天的微信运动步数均可兑换为相应的乐赚币。乐赚
+币可直接在步数乐赚小程序中直接兑换现金。当首页出现悬浮的
+金币时，点击即可领取。悬浮的乐赚币奖励会根据类型在一定时
+间内过期失效，请尽快在当日内领取完毕所有奖励。
+                        
+    </view>
+    <view class='intr-title'>
+      2.如何获得乐赚币
+    </view>
+    <view style='margin-bottom:20rpx;'>
+      <text>步行奖励：</text> 
+                            步数分10档，每一档完成后可领取乐赚币，运动步
+数以微信步数为准;即:用户每天行走步数达到指定的步数即可
+领取对应的乐赚币。
+                        
+    </view>
+    <view style='margin-bottom:20rpx;'>
+      <text>任务奖励：</text> 每完成一个任务即可获得对应乐赚币奖励，任务奖励完成任务时系统自动累加。
+    </view>
+    <view style='margin-bottom:20rpx;'>
+      <text>好友收益：</text> 
+                            邀请好友一起来步数乐赚每天运动和完成任务,你即
+可得你邀请的好友的部分收益，如果你有好友收益时，收益会出
+现好友收益悬浮金币，点击领取，永不失效。
+                        
+    </view>
+     <view class='intr-title'>
+     3.运动步数为零怎么办
+    </view>
+    <view>
+     请检查是否关注微信运动公众号，如已关注请继续行走;如未关
+注，则进入微信【添加好友】-搜索【微信运动】到公众号并关
+注，进入公众号后你会收到一条提示:是否要让微信访问我们的
+活动记录,点击“好”即可。
+                        
+    </view>
+  </view>
+  <view class="home-ad">
+      <!-- <ad unit-id="adunit-8c35e84f11e1ad93"></ad> -->
+      <ad unit-id="adunit-4b2c5fd6911c8d30" ad-type="video" ad-theme="white"></ad>
+  </view>
+</view>

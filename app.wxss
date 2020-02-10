@@ -1,0 +1,65 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+} 
+button::after { border: none; }
+/* 分享按钮 */
+.share-btn{
+  background:linear-gradient(0deg,rgba(252,237,96,1) 0%,rgba(255,233,137,1) 50%,rgba(249,186,55,1) 100%);
+box-shadow:0px 5rpx 4rpx 0px rgba(248,176,7,0.43);
+border-radius: 35rpx;
+  height: 70rpx;
+  width: 466rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin: 0 auto;
+ font-size: 30rpx;
+ margin-top: -35rpx;
+ color:#B15B29;
+}
+.share-btn image{
+  width: 34rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+.share-btn-ani{
+   background:linear-gradient(0deg,rgba(252,237,96,1) 0%,rgba(255,233,137,1) 50%,rgba(249,186,55,1) 100%);
+box-shadow:0px 5rpx 4rpx 0px rgba(248,176,7,0.43);
+border-radius: 35rpx;
+  height: 70rpx;
+  width: 466rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin: 0 auto;
+ font-size: 30rpx;
+ margin-top: -35rpx;
+ color:#B15B29;
+  animation: heart 1.3s ease-in-out infinite ;
+}
+@keyframes heart{
+  0%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+  100%{
+    transform: scale(1)
+  }
+
+}
+.mask{
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+}
+/* banner广告 */
+.home-ad{
+  padding:0  24rpx;
+  margin:24rpx 0; 
+}

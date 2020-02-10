@@ -1,0 +1,92 @@
+/* pages/signin/signin.wxss */
+.signin-content{
+  background: #f00;
+  padding: 25rpx;
+}
+.signin-title{
+  color: #fff;
+  font-size: 24rpx;
+}
+.signin-step{
+  width:702rpx;
+  margin: 0 auto;
+  margin-top: 17rpx;
+  margin-bottom: 32rpx;
+}
+.signin-step-bg{
+  background: #fff;
+  width: 680rpx;
+  margin: 0 auto;
+  border-radius: 6rpx;
+}
+.signin-has{
+  text-align: center;
+  color: #282828;
+  font-size: 24rpx;
+  line-height: 60rpx;
+}
+.signin-ul{
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  width: 680rpx;
+  padding-bottom: 22rpx;
+  
+}
+.signin-li{
+  background: #F7F7F5;
+  display: flex;
+  position: relative;
+  width: 86rpx;
+  height: 110rpx;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4rpx;
+}
+.signin-coin{
+  height: 54rpx;
+  width: 54rpx;
+  background: url(https://kuaiyouqian.net/static/mini/coin-bg1.png) no-repeat;
+  background-size: 100%;
+  background-position:center; 
+  color: #F9382B;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 54rpx;
+}
+.signin-coin-gift{
+  height: 54rpx;
+  width: 54rpx;
+  background: url(https://kuaiyouqian.net/static/mini/gift.png) no-repeat;
+  background-size: contain;
+  color: #F9382B;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 54rpx;
+}
+.signin-text{
+  color: #3B3B3B;
+  font-size: 20rpx;
+}
+.signin-bar{
+  height: 66rpx;
+  width: 100%;
+  margin-bottom: -33rpx;
+}
+.signin-mask{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rpx;
+}
+.signin-mask image{
+  width: 52rpx;
+  height: 32rpx;
+}

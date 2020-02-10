@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "news-list":"../../components/newsList/newsList",
+    "xm-ad": "/components/xmAD/xmAD"
+  }
+}

@@ -1,0 +1,175 @@
+/* pages/mine/mine.wxss */
+.mine-avatar{
+  height: 122rpx;
+  width: 122rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mine-top{
+  background:#F9382B;
+  padding: 20rpx 0 73rpx 0;
+  color: #fff;
+  text-align: center;
+}
+.mine-nick{
+  line-height: 70rpx;
+  font-size: 34rpx;
+}
+.mine-content{
+  width:550rpx;
+  margin: 0 auto;
+}
+.mine-detail{
+  display: flex;
+  justify-content: space-between;
+}
+.mine-detail view{
+  color: #FBF4DB;
+  font-size: 20rpx;
+  line-height: 38rpx;
+  width:104rpx;
+  height:38rpx;
+  background:linear-gradient(270deg,rgba(255,160,31,1) 0%,rgba(255,192,54,1) 100%);
+  border-radius:14rpx 14rpx 14rpx 2rpx;
+}
+.mine-amount{
+  display: flex;
+  justify-content: space-between;
+  font-size: 48rpx;
+  color: #FCCD17;
+  margin: 10rpx 0;
+}
+.mine-amount view{
+  width: 180rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mine-amount .mine-lv{
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+  background: url(https://kuaiyouqian.net/static/mini/arrow.png) no-repeat;
+  background-size: contain;
+  background-position: center 70%;
+}
+.mine-amount image{
+  width: 179rpx;
+  height: 23rpx;
+  vertical-align: middle;
+  margin-top: -10rpx;
+}
+.mine-amount text{
+  font-size:32rpx;
+}
+.mine-leimu{
+  display: flex;
+  justify-content: space-between;
+  color:#FBF4DB;
+  font-size: 24rpx;
+}
+.mine-leimu view:nth-of-type(2){
+  border: 2rpx solid #FBF4DB;
+  height: 50rpx;
+  box-sizing: border-box;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  width: 156rpx;
+  text-align: center;
+}
+.mine-bottom{
+  padding: 0 24rpx;
+}
+.mine-bottom-title{
+  border-left: 3px solid #F9382B;
+  margin: 34rpx 0;
+  color: #191919;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  height: 30rpx;
+  line-height: 30rpx; 
+}
+.mine-bottom-content{
+  padding-left: 16rpx;
+}
+.mine-text1{
+  color: #191919;
+  font-size: 36rpx;
+}
+.mine-bottom-content image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: middle;
+  margin: 0 10rpx;
+}
+.mine-text2{
+  color: #F9392B;
+  font-size: 30rpx;
+}
+.mine-bottom-content button{
+  padding: 0;
+  width:120rpx;
+height:50rpx;
+line-height: 50rpx;
+text-align: center;
+background:linear-gradient(0deg,rgba(222,51,59,1) 0%,rgba(242,104,42,1) 100%);
+border-radius:25rpx;
+color: #FFF5F4;
+font-size: 24rpx;
+float: right;
+}
+.mine-bottom-content .signed{
+  background: #b1b1b1;
+}
+.mine-exchange{
+  height: 760rpx;
+  width: 550rpx;
+  background: url(https://kuaiyouqian.net/static/mini/shipin.png) no-repeat;
+  background-size: contain;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1112;
+  text-align: center;
+}
+.mine-exchange-close{
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: -70rpx;
+  text-align:center;
+ width: 100%;
+}
+.mine-exchange-title{
+  color: #4C4642;
+  font-size: 30rpx;
+  margin-top: 126rpx;
+}
+.mine-exchange-coin{
+  color: #FE7B16;
+  font-size: 48rpx;
+  margin-top: 8rpx;
+}
+.mine-exchange-coin image{
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+.mine-exchange-money{
+  color: #F9372B;
+  font-size: 72rpx;
+  margin-top:80rpx;
+}
+.mine-exchange-money text{
+  font-size: 30rpx;
+}
+.mine-exchange-tips{
+  color: #FECA91;
+  font-size: 20rpx;
+  margin: 28rpx auto;
+   width: 198rpx;
+   line-height: 24rpx;
+}

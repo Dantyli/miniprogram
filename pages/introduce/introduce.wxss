@@ -1,0 +1,23 @@
+/* pages/introduce/introduce.wxss */
+.intr-content{
+  padding: 43rpx;
+  font-size: 24rpx;
+}
+.intr-title{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #F9372B;
+}
+.intr text{
+  font-weight: 500;
+}
+.intr-banner{
+  height: 170rpx;
+  width: 100%;
+  background: #F9372B;
+  text-align: center;
+}
+.intr-banner image{
+  height: 170rpx;
+  width: 652rpx;
+}

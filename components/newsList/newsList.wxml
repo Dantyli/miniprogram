@@ -1,0 +1,16 @@
+<view class='home-news'>
+     <!-- <view class='home-news-ul {{isAnim?"anim":""}}'>
+         <view class='home-news-li' wx:for="{{news}}" wx:key="{{index}}">
+             <!-- <image   src='{{item.picpath}}'></image> -->
+             <!-- <text>{{item.nickname}}</text>
+             提现{{item.amount}}元
+         </view>
+     </view> --> 
+     <swiper class='home-news-ul' vertical="true" autoplay="true" interval="3500" circular="true" easing-function="linear" >
+          <swiper-item class="home-news-li" wx:for="{{news}}" wx:key="{{index}}">
+               <image   src='{{item.picpath}}'></image>
+             <text>{{item.nickname}}</text>
+             提现{{item.amount}}元
+          </swiper-item>     
+     </swiper>
+ </view>

@@ -1,0 +1,123 @@
+<!--index.wxml-->
+<view class='home'>
+  <view bindtap='goSign' class='home-sgn'>已签到{{signin}}天</view>
+  <view bindtap='goIntr' class='home-le'>了解乐赚币
+    <image src='../../static/liaojie.png' />
+  </view>
+  <!-- 滚动新闻组件 -->
+  <news-list />
+  <!-- 领金币 -->
+  <view class='home-bg'>
+    <view class='home-my'>
+      <view wx:if="{{red11.name}}" class='home-coin home-coin1 {{red1?"coin-ani":"coin-fly1"}}'>
+        <image data-id="1" bindtap='bindClick' src='../../static/coin.png'></image>
+        <text>{{red11.name}}</text>
+      </view>
+      <view wx:if="{{red22.name}}" class='home-coin home-coin2 {{red2?"coin-ani":"coin-fly2"}}'>
+        <image data-id="2" bindtap='bindClick' src='../../static/coin.png'></image>
+        <text>{{red22.name}}</text>
+      </view>
+      <view wx:if="{{red33.name}}" class='home-coin home-coin3 {{red3?"coin-ani":"coin-fly3"}}'>
+        <image bindtap='bindClick' data-id="3" src='../../static/coin.png'></image>
+        <text>{{red33.name}}</text>
+      </view>
+      <view wx:if="{{red44.name}}" class='home-coin home-coin4 {{red4?"coin-ani":"coin-fly4"}}'>
+        <image bindtap='bindClick' data-id="4" src='../../static/coin.png'></image>
+        <text>{{red44.name}}</text>
+      </view>
+      <view class='home-my-title'>我的乐赚币</view>
+      <view bindtap='goIncome' class='home-my-coin'>{{amount}}</view>
+      <view class='home-my-step'>今日步数
+        <text>{{step}}</text> 步</view>
+    </view>
+  </view>
+  <button open-type='share' class='share-btn'>
+    邀请好友，一起来玩
+    <image src='../../static/share.png' />
+  </button>
+  <view class='home-wenrun-auth' wx:if="{{!isAuthRun}}">
+     允许微信运动授权才可获得步数奖励 <button open-type='openSetting' >立即授权</button>
+  </view>
+  <view wx:if="{{stepArr.length>0}}" class='home-lei-title'>每日累记步数开乐赚币</view>
+  <view class='home-ul'>
+    <view class='home-ul-title' wx:if="{{stepArr.length>0}}">
+      <view class='home-li-title'>1步</view>
+      <view class='home-li-title'>1000步</view>
+      <view class='home-li-title'>3000步</view>
+      <view class='home-li-title'>6000步</view>
+      <view class='home-li-title'>10000步</view>
+      <view class='home-li-title'>25000步</view>
+      <view class='home-li-title'>40000步</view>
+      <view class='home-li-title'>50000步</view>
+      <view class='home-li-title'>60000步</view>
+      <view class='home-li-title'>80000步</view>
+    </view>
+    <view class='home-ul-content'>
+      <view wx:for="{{stepArr}}" class='home-li-content {{item.status==0?"home-li-openable":(item.status==1?"home-li-opened":"home-li-openwait")}} ' wx:key="index">
+        <view class='home-li-fake' data-id="{{index+1}}" data-status="{{item.status}}" bindtap='getRunGift'></view>
+        <text>{{item.nums}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='home-ad xm_banner'>
+    <!-- <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}"
+bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad> -->
+  <ad unit-id="adunit-15e19a844b4bf183"></ad>
+  </view>
+  <!-- 弹框 -->
+  <view wx:if="{{redball||redgifted||share||bsbz||opening}}" class='mask'></view>
+  <view bindtap='openRed' class='red-ball' wx:if="{{redball}}">
+    <view class='red-ball-title'>幸运奖励</view>
+    <!-- <view class="red-ball-content">观看完整视频得乐赚币</view> -->
+    <view class='red-ball-close' catchtap='bindClose'>点击关闭</view>
+  </view>
+  <view class='red-gift' wx:if="{{redgifted}}">
+      <view class='red-gift-title'>获得奖励</view>
+      <view class='red-gift-nums'>{{kpjiangli}}<text>乐赚币</text></view>
+      <view class='red-gift-given'>已存入你的乐赚币收益</view>
+      <button open-type='share' style='margin-top:100rpx;' class='share-btn'>邀请好友得10-200乐赚币</button>
+      <view class='share-tips'>邀请新用户即可解锁更多红包</view>
+      <view class='red-ball-close' bindtap='bindClose'>点击关闭</view>
+  </view>
+  <button lang='zh_CN' bindgetuserinfo="bindGetUserInfo" wx:if="{{!hasUserInfo&&firstShow}}" class='userInfo' open-type='getUserInfo'></button>
+  <!--分享弹框-->
+  <view class='share-container' wx:if="{{share}}">
+     <image class='share-head' src='https://kuaiyouqian.net/static/mini/share-head.png'></image>
+  <view  class='share-li'>
+     <view>邀请新用户奖励</view>
+     <view>
+        <image src='https://kuaiyouqian.net/static/mini/lezhuan.png'></image>
+        X 10~200
+     </view>
+  </view>
+   <!-- <view  class='share-li'>
+     <view>唤醒用户奖励</view>
+     <view>
+        <image src='https://kuaiyouqian.net/static/mini/lezhuan.png'></image>
+        X 10
+     </view>
+  </view> -->
+  <image class="share-banner" src='https://kuaiyouqian.net/static/mini/share-banner.png'></image>
+   <button style='margin-top:40rpx;' open-type='share' class='share-btn'>邀请好友得10-200乐赚币</button>
+    <view class='red-ball-close' bindtap='bindClose'>点击关闭</view>
+  </view>
+  <view class='bsbz' wx:if="{{bsbz}}">
+     <view class='bsbz-title'>很遗憾步数未达标</view>
+     <view class='bsbz-tips'>加油去运动吧！</view>
+     <!-- <button open-type='share'  class='share-btn' style='margin-top:228rpx;'>邀请好友得10-200乐赚币</button> -->
+     <view class='red-ball-close' bindtap='bindClose'>点击关闭</view>
+  </view>
+  <view class='opening' wx:if="{{opening}}">
+       <image src='https://kuaiyouqian.net/static/mini/tou.png' class='opening-tou'></image>
+       <view class='opening-houde'>今日累计获得了 <text>{{huode}}</text>乐赚币</view>
+       <image class='opening-jinbi' src='https://kuaiyouqian.net/static/mini/jinbi.png'></image>
+       <view class='opening-yuji'>步数达到{{bushu}}可累计领{{yuji}}乐赚币</view>
+       <!-- <button open-type='share' style='margin-bottom:50rpx;margin-top:0;' class='share-btn'>邀请好友得10-200乐赚币</button> -->
+        <view class='red-ball-close' bindtap='bindClose'>点击关闭</view>
+         <view >
+          <ad unit-id="adunit-f82811905952b11d"></ad>
+          </view>
+  </view>
+</view>
